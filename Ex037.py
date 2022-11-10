@@ -11,8 +11,8 @@ número = int(input('Digite um número inteiro: '))
 # 3 — para hexadecimal.
 print('''Escolha uma das bases para conversão:')
 [ 1 ] Converter para BINÁRIO.
-[ 2 ] converter para OCTAL.
-[ 3 ] converter para HEXADECIMAL.''')
+[ 2 ] Converter para OCTAL.
+[ 3 ] Converter para HEXADECIMAL.''')
 
 # Escolha da base
 
