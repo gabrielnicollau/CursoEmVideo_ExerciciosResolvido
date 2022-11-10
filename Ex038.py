@@ -19,4 +19,3 @@ elif valor2 > valor1:
 
 else:
     print('Os dois valores são IGUAIS!')
-
