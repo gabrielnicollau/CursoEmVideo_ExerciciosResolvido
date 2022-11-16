@@ -6,27 +6,30 @@
 
 from datetime import date
 
-# ler o ano de nascimento
+# ler o ano de nascimento.
 
-ano_nascimento = int(input('Digite seu ano que nascimento: '))
+ano_nascimento = int(input('Digite sua idade: '))
 
-# conforme a sua idade, se ele ainda vai se alistar ao serviço militar
+# verificar o ano atual.
 
 ano_atual = date.today().year
 
-ano_alistamento = ano_atual - ano_nascimento
+# Verificar a idade.
 
-print('Você tem {} anos'.format(ano_alistamento))
+idade = ano_atual - ano_nascimento
 
-# Maior de 18
+print('Quem nasceu em {} tem {} anos em {}.'.format(ano_nascimento, idade, ano_atual))
 
-if ano_alistamento == 18:
-    print('Está na hora de se alistar!')
+# Fez 18:
+if idade == 18:
+    print('Você tem que se alistar IMEDIATAMENTE!')
 
-# Passou dos 18, calcular quanto tempo já passou.
+elif idade > 18:
+    tempo_passou = idade - 18
+    print('Você já deveria ter se alistado há {} anos.'.format(tempo_passou))
+    print(f'Seu alistamento foi em {ano_atual - tempo_passou }.')
 
-elif ano_alistamento > 18:
-    print('Você tem {} anos')
-
-# Já passou o alistamento
-
+else:
+    tempo_passou = 18 - idade
+    print('Ainda faltam {} ano/anos para o alistamento.'.format(tempo_passou))
+    print(f'Seu alistamento será em {ano_atual + tempo_passou}.')
