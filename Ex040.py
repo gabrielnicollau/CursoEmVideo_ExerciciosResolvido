@@ -24,7 +24,7 @@ if média <= 5:
 
 # — Média entre 5.0 e 6.9: RECUPERAÇÃO
 
-elif média <= 6.9:
+elif 7 > média >= 5:  # Condição 7 maior que a nota, se for verdadeira a nota tem que ser maior ou igual a 5
     print('Você está de \033[33mRECUPERAÇÃO!\033[m')
 
 # – Média 7.0 ou superior: APROVADO
