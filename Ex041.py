@@ -27,17 +27,22 @@ idade = ano_atual - ano_nascimento
 
 print('Você tem {} anos.'.format(idade))
 
-if idade <= 9:
+# – Até 9 anos: MIRIM
+if idade <= 9:  # Menor que 9
     print('Sua categoria é: MIRIM.')
 
-elif 9 < idade <= 14:
+# – Até 14 anos: INFANTIL
+elif idade <= 14:  # Se for maior que 9 vai entrar nesse elif e assim sucessivamente.
     print('Sua categoria é: INFANTIL.')
 
-elif 14 < idade <= 19:
+# – Até 19 anos: JÚNIOR
+elif idade <= 19:
     print('Sua categoria é: JÚNIOR')
 
-elif 19 < idade <= 25:
+# – Até 25 anos: SÊNIOR
+elif idade <= 25:
     print('Sua categoria é: SÊNIOR')
 
+# – Acima de 25 anos: MASTER
 elif idade > 25:
     print('Sua categoria é: MASTER')
