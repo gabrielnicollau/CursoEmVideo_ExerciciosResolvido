@@ -14,14 +14,16 @@ reta3 = float(input('Terceiro segmento: '))
 # Verificar se vai formar um triângulo.
 # Se a soma das medidas de dois deles é sempre maior que a medida do terceiro, então, eles podem formar um triângulo.
 if reta3 + reta2 > reta1 and reta3 + reta1 > reta2 and reta1 + reta2 > reta3:
-    print('É POSSÍVEL formar um TRIÂNGULO: ', end='')
-
+    print('\033[32mÉ POSSÍVEL formar um TRIÂNGULO: \033[M', end='')
 
     if reta1 == reta2 == reta3:  # EQUILÁTERO: todos os lados iguais.
-        print('EQUILÁTERO')
+        print('EQUILÁTERO!')
 
     elif reta1 != reta2 != reta3 != reta1:  # ISÓSCELES: dois lados iguais, um diferente.
-        print('ESCALENO')
+        print('ESCALENO!')
 
     else:  # ISÓSCELES: dois lados iguais, um diferente.
-        print('ISÓSCELES')
+        print('ISÓSCELES!')
+
+else:
+    print('\033[31mNão é possível formar um TRIÂNGULO!\033[m')
