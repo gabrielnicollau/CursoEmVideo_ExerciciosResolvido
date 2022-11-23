@@ -15,6 +15,8 @@ from time import sleep
 # Layout
 print('=-' * 7, 'FORMAS DE PAGAMENTO', '-=' * 7)
 
+valor = float(input('\033[33mDigite o valor da compra R$:\033[m '))
+
 # Layout da formas de pagamento.
 
 print('\33[33mESCOLHA UMA FORMA DE PAGAMENTO\033[m')
@@ -27,10 +29,9 @@ print('''
 # Escolha do cliente e valor da compra.
 
 escolha = int(input('\033[33mQual sua escolha de pagamento ?\033[m '))
-valor = float(input('\033[33mDigite o valor da compra R$:\033[m '))
-
 print('\033[31mCalculando...\033[m')
-sleep(1.5)
+sleep(1.0)
+
 # à vista dinheiro/cheque: 10% de desconto
 if escolha == 1:
     desconto = valor - (valor * 10 / 100)
@@ -40,20 +41,29 @@ if escolha == 1:
 
 elif escolha == 2:
     desconto_cartão = valor - (valor * 5 / 100)
-    print('Sua compra de \033[32mR${:.2f}\033[m pagando à vista no cartão'.format(valor), end='')
-    print(' vai sair por \033[32mR${:.2f}\033[m.'.format(desconto_cartão))
+    print('Sua compra de \033[32mR${:.2f}\033[m pagando à vista no cartão'.format(valor), end=' ')
+    print('Vai sair por \033[32mR${:.2f}\033[m.'.format(desconto_cartão))
 
 # em até 2x no cartão: preço formal
 
 elif escolha == 3:
     parcelado2 = valor / 2
-    print('Sua compra de \033[32mR${:.2f}\033[m'.format(valor), end='')
-    print(' vai sair por \033[32mR${:.2f}\033[m.'.format(parcelado2))
+    print('Sua compra de \033[32mR${:.2f}\033[m'.format(valor), end=' ')
+    print('vai sair por \033[32mR${:.2f}\033[m.'.format(parcelado2))
+
+
 
 elif escolha == 4:
-    vezes = int(input('Quantas vezes será parcela (limite de até 12 vezes): '))
+    parcelas = int(input('\033[33mQuantas vezes será parcela (limite de até 12 vezes):\033[m '))
     print('\033[31mCalculando...\033[m')
-    sleep(1.5)
-    parcelado3 = valor / vezes
-    print('Sua compra de \033[32mR${:.2f} parcelado em {}x'.format(valor, vezes), end='')
-    print(' vai sair por \033[32mR${:.2f}\033[m.'.format(parcelado3))
+    sleep(1.0)
+
+    juros = valor * 20 / 100  # Juros por mês
+    parc_juros = (valor / parcelas) + juros
+    valor_total = parc_juros * parcelas
+    juros_total = juros * parcelas
+
+    print('Sua compra será parcelas em \033[35m{}x de R${:.2f} COM JUROS\033[m.'.format(parcelas, juros))
+    print('Valor inicia sem juros \033[33mR${:.2f}'.format(parc_juros), end=' ')
+    print('COM JUROS\033[m. O total do valor vai ser \033[32mR${:.2f}\033[m.'.format(valor_total))
+    print('Total de \033[31mJUROS é R${:.2f}\033[m.'.format(juros_total))
