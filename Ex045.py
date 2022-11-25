@@ -1,6 +1,7 @@
 # Exercício Python 45: Crie um programa que faça o computador jogar Jokenpô com você.
 
 from random import randint
+from time import sleep
 
 print('''Escolha uma opção: 
 [ 1 ] - PEDRA
@@ -12,6 +13,14 @@ print('''Escolha uma opção:
 escolha_pc = randint(1, 3)  # Computador escolhe 1 número entre 1 e 3.
 print(escolha_pc)
 escolha_jogador = int(input('Digite a sua opção:  '))  # Jogador digita um número entre 1 e 3.
+
+print('=-' * 20)
+print('JO')
+sleep(1.0)
+print('KEN')
+sleep(1.0)
+print('PÔ')
+print('=-' * 20)
 
 
 if escolha_pc == 1:  # Computador jogou Pedra:
