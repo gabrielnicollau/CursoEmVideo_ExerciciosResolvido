@@ -1,25 +1,56 @@
 # Exercício Python 45: Crie um programa que faça o computador jogar Jokenpô com você.
 
-from random import choice
+from random import randint
 
 print('''Escolha uma opção: 
-[ 0 ] - PEDRA
-[ 1 ] - PAPEL
-[ 2 ] - TESOURA''')
+[ 1 ] - PEDRA
+[ 2 ] - PAPEL
+[ 3 ] - TESOURA''')
 
-# COMPUTADOR:
+# Informações computador e jogador:
 
-lista = (['Pedra', 'Papel', 'Tesoura'])
-escolha_pc = choice(lista)
-
-print('A escolha foi {}'.format(escolha_pc))
-
-# JOGADOR:
-
-escolha_jogador = str(input('Qual é a sua escolha: ')).lower()
+escolha_pc = randint(1, 3)  # Computador escolhe 1 número entre 1 e 3.
+print(escolha_pc)
+escolha_jogador = int(input('Digite a sua opção:  '))  # Jogador digita um número entre 1 e 3.
 
 
+if escolha_pc == 1:  # Computador jogou Pedra:
+
+    if escolha_jogador == escolha_pc:  # Pedra x Pedra: Empate.
+        print('Computador jogou Pedra e você jogou Pedra.')
+        print('EMPATE!')
+
+    elif escolha_jogador == 2:  # Pedra x Papel: Papel ganha.
+        print('Computador jogou Pedra e você jogou Papel.')
+        print('JOGADOR GANHOU!')
+
+    elif escolha_jogador == 3:  # Pedra x Tesoura: Pedra ganha.
+        print('Computador jogou Pedra e você jogou Tesoura')
+        print('COMPUTADOR GANHOU!')
 
 
+elif escolha_pc == 2:  # Computador jogou Papel:
+    if escolha_jogador == escolha_pc:  # Papel x Papel: Empate.
+        print('Computador jogou Papel e você jogou Papel.')
+        print('EMPATE!')
 
+    elif escolha_jogador == 1:  # Papel x Pedra: Papel ganha.
+        print('Computador jogou Papel e você jogou Pedra.')
+        print('COMPUTADOR VENCEU!')
 
+    elif escolha_jogador == 3:  # Papel x Tesoura: Tesoura ganha.
+        print('Computador jogou Papel e você jogou Tesoura.')
+        print('JOGADOR GANHOU')
+
+elif escolha_pc == 3:  # Computador jogou Tesoura:
+    if escolha_jogador == escolha_pc:  # Tesoura x Tesoura: Empate.
+        print('Computador jogou Tesoura e você jogou Tesoura.')
+        print('EMPATE!')
+
+    elif escolha_jogador == 1:  # Tesoura x Pedra: Pedra ganha.
+        print('Computador jogou Tesoura e você jogou Pedra.')
+        print('JOGADOR GANHOU!')
+
+    elif escolha_jogador == 2:  # Tesoura x papel: Tesoura ganha.
+        print('Computador jogou Tesoura e você jogou Papel')
+        print('COMPUTADOR GANHOU!')
