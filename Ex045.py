@@ -4,16 +4,18 @@ from random import randint
 from time import sleep
 
 print('''Escolha uma opção: 
-[ 1 ] - PEDRA
-[ 2 ] - PAPEL
-[ 3 ] - TESOURA''')
+[ 0 ] - PEDRA
+[ 1 ] - PAPEL
+[ 2 ] - TESOURA''')
 
 # Informações computador e jogador:
 
-escolha_pc = randint(1, 3)  # Computador escolhe 1 número entre 1 e 3.
+escolha_pc = randint(0, 2)  # Computador escolhe 1 número entre 1 e 3.
 
 escolha_jogador = int(input('Digite a sua opção:  '))  # Jogador digita um número entre 1 e 3.
-if escolha_jogador <= 3:
+
+if escolha_jogador <= 2:  # Opção de escolhas do 0 ao 2, maior que isso parar o programa.
+
     print('\033[32mVAMOS COMEÇA!\033[m')
     print('=-' * 20)
     print('JO')
@@ -22,48 +24,46 @@ if escolha_jogador <= 3:
     sleep(1.0)
     print('PÔ')
     print('=-' * 20)
+    print(escolha_pc)
+    # 1° COMPUTADOR ESCOLHEU PEDRA
+    if escolha_pc == 0:  # Computador jogou Pedra.
+        if escolha_pc == escolha_jogador:  # Jogador escolheu (Pedra). Pedra x Pedra: Empate.
+            print('\033[33mEMPATE!\033[m')
 
-
-    if escolha_pc == 1:  # Computador jogou Pedra:
-
-        if escolha_jogador == escolha_pc:  # Pedra x Pedra: Empate.
-            print('Computador jogou Pedra e você jogou Pedra.')
-            print('EMPATE!')
-
-        elif escolha_jogador == 2:  # Pedra x Papel: Papel ganha.
+        elif escolha_jogador == 1:  # Jogador escolheu (Papel). Pedra x Papel: Papel.
             print('Computador jogou Pedra e você jogou Papel.')
-            print('JOGADOR GANHOU!')
+            print('\033[32mVOCÊ GANHOU!\033[m')
 
-        elif escolha_jogador == 3:  # Pedra x Tesoura: Pedra ganha.
-            print('Computador jogou Pedra e você jogou Tesoura')
-            print('COMPUTADOR GANHOU!')
+        elif escolha_jogador == 2:  # Jogador escolheu (Tesoura). Pedra x Tesoura: Pedra
+            print('O computador jogou Pedra e você jogou Tesoura.')
+            print('\033[37mO COMPUTADOR GANHOU!\033[m')
 
+    # 2° COMPUTADOR ESCOLHEU PAPEL
+    elif escolha_pc == 1:  # Computador jogou Papel.
+        if escolha_pc == escolha_jogador:  # Jogador escolheu (Papel). Papel x Papel: Empate.
+            print('O computador jogou Papel e você jogou Papel.')
+            print('\033[33mEMPATE!\033[m')
 
-        elif escolha_pc == 2:  # Computador jogou Papel:
-            if escolha_jogador == escolha_pc:  # Papel x Papel: Empate.
-                print('Computador jogou Papel e você jogou Papel.')
-                print('EMPATE!')
+        elif escolha_jogador == 0:  # Jogador escolheu (Pedra). Papel x Pedra: Papel.
+            print('O computador jogou Papel e você jogou Pedra.')
+            print('\033[37mCOMPUTADOR GANHOU!\033[m')
 
-        elif escolha_jogador == 1:  # Papel x Pedra: Papel ganha.
-            print('Computador jogou Papel e você jogou Pedra.')
-            print('COMPUTADOR VENCEU!')
+        elif escolha_jogador == 2:  # Jogador escolheu (Tesoura). Papel x Tesoura: Tesoura.
+            print('O computador jogou Papel e você jogou Tesoura.')
+            print('\033[32mVOCÊ GANHOU!\033[m')
 
-        elif escolha_jogador == 3:  # Papel x Tesoura: Tesoura ganha.
-            print('Computador jogou Papel e você jogou Tesoura.')
-            print('JOGADOR GANHOU')
+    # 3° COMPUTADOR ESCOLHEU TESOURA
+    elif escolha_pc == 2:  # Computador jogou tesoura.
+        if escolha_pc == escolha_jogador:  # Jogador escolheu (tesoura). Tesoura x Tesoura: Empate.
+            print('O computador jogou Tesoura e você jogou Tesoura.')
+            print('\033[33mEMPATE!\033[m')
 
-        elif escolha_pc == 3:  # Computador jogou Tesoura:
-            if escolha_jogador == escolha_pc:  # Tesoura x Tesoura: Empate.
-                print('Computador jogou Tesoura e você jogou Tesoura.')
-                print('EMPATE!')
+        elif escolha_pc == 0:  # Jogador escolheu (Pedra). Tesoura x Pedra: Pedra.
+            print('O computador jogou Tesoura e você jogou Pedra.')
+            print('\033[32mVOCÊ GANHOU!\033[m')
 
-        elif escolha_jogador == 1:  # Tesoura x Pedra: Pedra ganha.
-            print('Computador jogou Tesoura e você jogou Pedra.')
-            print('JOGADOR GANHOU!')
-
-        elif escolha_jogador == 2:  # Tesoura x papel: Tesoura ganha.
-            print('Computador jogou Tesoura e você jogou Papel')
-            print('COMPUTADOR GANHOU!')
-
+        elif escolha_jogador == 1:  # Jogador escolheu (Papel). Tesoura x Papel: Papel.
+            print('O computador jogou Tesoura e você jogou Papel.')
+            print('\033[37mCOMPUTADOR GANHOU!\033[m')
 else:
-    print('\033[31mOPÇÃO INVÁLIDA!\033[m')
+    print('\033[31mOPÇÃO INVÁLIDA, ESCOLHA UMA OPÇÃO DE 0 A 2.\033[m')
