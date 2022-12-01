@@ -1,4 +1,5 @@
-# Faça um programa que leia um número inteiro qualquer e mostre na tela sua tabuada.
+"""Exercício Python 49: refaça o DESAFIO 9, mostrando a tabuada de um número que o usuário escolher, só que
+utilizando agora  um laço for."""
 
 numero = int(input('Digite o número para saber a sua tabuada: '))
 print('\033[33m=-\033[m' * 8)
