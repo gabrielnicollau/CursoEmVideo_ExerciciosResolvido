@@ -13,4 +13,4 @@ if contador == 0:
     print('O número digitado foi \033[32m{}\033[m, \033[32mÉ PRIMO!\033[m'.format(seunúmero))
 
 else:
-    print('O número digitado foi\033[32m{}\033[m, \033[31mNÃO É PRIMO!\033[m'.format(seunúmero))
+    print('O número digitado foi \033[32m{}\033[m, \033[31mNÃO É PRIMO!\033[m'.format(seunúmero))
