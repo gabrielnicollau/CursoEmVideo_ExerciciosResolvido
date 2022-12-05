@@ -7,8 +7,6 @@ for divisor in range(2, seunúmero):
     if seunúmero % divisor == 0:
         contador = contador + 1
 
-
-
 if contador == 0:
     print('O número digitado foi \033[32m{}\033[m, \033[32mÉ PRIMO!\033[m'.format(seunúmero))
 
