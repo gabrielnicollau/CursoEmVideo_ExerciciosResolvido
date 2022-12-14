@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8002e3c8-76a8-4cbe-a8b3-98e6f29ce53d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8002e3c8-76a8-4cbe-a8b3-98e6f29ce53d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670961750836</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="arquivos">
+      <created>1671019262751</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671019262751</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,8 +199,8 @@
     <MESSAGE value="Ex055 : Maior e menor peso (concluído)." />
     <MESSAGE value="Ex056: classificação de grupo (em andamento)." />
     <MESSAGE value="Ex056: analisador de grupo (concluído)" />
-    <MESSAGE value="arquivos" />
     <MESSAGE value="Ex057 - Em andamento" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ex057 - Em andamento" />
+    <MESSAGE value="arquivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="arquivos" />
   </component>
 </project>
