@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8002e3c8-76a8-4cbe-a8b3-98e6f29ce53d" name="Changes" comment="" />
+    <list default="true" id="8002e3c8-76a8-4cbe-a8b3-98e6f29ce53d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +37,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/x397428/Desktop/Gabriel_bkp/AULA_PYHON _CURSO_EM_VIDEO/EXERCICIOS/CursoEmVideo_ExerciciosResolvido&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/x397428/Desktop/Gabriel_bkp/AULA_PYHON _CURSO_EM_VIDEO/EXERCICIOS/CursoEmVideo_ExerciciosResolvido&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RunManager" selected="Python.Ex057">
@@ -169,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670522018075</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="arquivos">
+      <created>1670950987537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670950987537</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ex057 - Em andamento">
+      <created>1670961750836</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670961750836</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -177,6 +194,8 @@
     <MESSAGE value="Ex055 : Maior e menor peso (concluído)." />
     <MESSAGE value="Ex056: classificação de grupo (em andamento)." />
     <MESSAGE value="Ex056: analisador de grupo (concluído)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ex056: analisador de grupo (concluído)" />
+    <MESSAGE value="arquivos" />
+    <MESSAGE value="Ex057 - Em andamento" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ex057 - Em andamento" />
   </component>
 </project>
