@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8002e3c8-76a8-4cbe-a8b3-98e6f29ce53d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Ex028.v1.0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex058.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,28 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.Ex057">
+  <component name="RunManager" selected="Python.Ex028.v1.0">
+    <configuration name="Ex028.v1.0" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CursoEmVideo_ExerciciosResolvido" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ex028.v1.0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Ex054" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CursoEmVideo_ExerciciosResolvido" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,6 +151,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Ex028.v1.0" />
         <item itemvalue="Python.Ex057" />
         <item itemvalue="Python.Ex056" />
         <item itemvalue="Python.Ex055" />
@@ -207,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671025986650</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="arquivos">
+      <created>1671026027552</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671026027552</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -216,8 +247,8 @@
     <MESSAGE value="Ex056: classificação de grupo (em andamento)." />
     <MESSAGE value="Ex056: analisador de grupo (concluído)" />
     <MESSAGE value="Ex057 - Em andamento" />
-    <MESSAGE value="arquivos" />
     <MESSAGE value="Ex 057: Validação de dados (while) - Concluído" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ex 057: Validação de dados (while) - Concluído" />
+    <MESSAGE value="arquivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="arquivos" />
   </component>
 </project>
