@@ -9,7 +9,7 @@ soma = 0  # Soma.
 cont = 0  # Contador começa com 0.
 
 while True:  # Enquanto for verdadeiro.
-    numeros = int(input('Digite um número: '))  # Input sendo verdadeiro.
+    numeros = int(input('Digite um número [999 para parar]: '))  # Input sendo verdadeiro.
 
     if numeros == 999:
         break
