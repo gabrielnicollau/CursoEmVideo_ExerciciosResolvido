@@ -3,12 +3,17 @@ Exercício Python 67: faça um programa que mostre a tabuada de vários números
 pelo usuário. O programa será interrompido quando o número solicitado for negativo.
 """
 
-núm = 0
-cont = 0
+while True:  # loop infinito.
 
-while True:
     núm = int(input('Qual tabuada você quer ver ? '))
+
+    print('-' * 30)
 
     if núm < 0:
         break
 
+    for tabuada in range(1, 11):
+        print(f'{núm} x {tabuada:2} = {núm * tabuada}')
+
+    print('-' * 30)
+print('PROGRAMA ENCERRADO!')
