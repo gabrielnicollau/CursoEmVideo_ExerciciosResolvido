@@ -21,19 +21,16 @@ while True:
     idade = int(input('Idade: '))
     sexo = ' '
     while sexo not in 'MmFf':
-        sexo = str(input('Sexo [M/F]: ')).title().split()[0]
-        break
+        sexo = str(input('Sexo [H/F]: ')).title().split()[0]
+
+    if sexo == 'M':
+        cont_H += 1
 
     if idade >= 18:
         maior_18 += 1
 
-    if sexo == 'H':
-        cont_H += 1
-
     if sexo == 'F' and idade < 20:
         menor_F20 += 1
-
-
 
     resposta = ' '
     while resposta not in 'SsNn':
